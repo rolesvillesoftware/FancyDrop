@@ -108,23 +108,23 @@ var DropDownComponent = /** @class */ (function () {
     ], DropDownComponent.prototype, "cssClass", void 0);
     __decorate([
         core_1.Output(),
-        __metadata("design:type", core_1.EventEmitter)
+        __metadata("design:type", typeof (_a = typeof core_1.EventEmitter !== "undefined" && core_1.EventEmitter) === "function" && _a || Object)
     ], DropDownComponent.prototype, "listToggle", void 0);
     __decorate([
         core_1.Output(),
-        __metadata("design:type", core_1.EventEmitter)
+        __metadata("design:type", typeof (_b = typeof core_1.EventEmitter !== "undefined" && core_1.EventEmitter) === "function" && _b || Object)
     ], DropDownComponent.prototype, "itemSelected", void 0);
     __decorate([
         core_1.ContentChild('selectedTemplate'),
-        __metadata("design:type", core_1.TemplateRef)
+        __metadata("design:type", typeof (_c = typeof core_1.TemplateRef !== "undefined" && core_1.TemplateRef) === "function" && _c || Object)
     ], DropDownComponent.prototype, "selectedTemplate", void 0);
     __decorate([
         core_1.ContentChild('actionTemplate'),
-        __metadata("design:type", core_1.TemplateRef)
+        __metadata("design:type", typeof (_d = typeof core_1.TemplateRef !== "undefined" && core_1.TemplateRef) === "function" && _d || Object)
     ], DropDownComponent.prototype, "actionTemplate", void 0);
     __decorate([
         core_1.ContentChild('listTemplate'),
-        __metadata("design:type", core_1.TemplateRef)
+        __metadata("design:type", typeof (_e = typeof core_1.TemplateRef !== "undefined" && core_1.TemplateRef) === "function" && _e || Object)
     ], DropDownComponent.prototype, "listTemplate", void 0);
     DropDownComponent = __decorate([
         core_1.Component({
@@ -135,6 +135,7 @@ var DropDownComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], DropDownComponent);
     return DropDownComponent;
+    var _a, _b, _c, _d, _e;
 }());
 exports.DropDownComponent = DropDownComponent;
 //# sourceMappingURL=drop-down.component.js.map
