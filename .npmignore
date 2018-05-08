@@ -1,0 +1,10 @@
+*.tgz
+package-lock.json
+tsconfig.json
+gruntfile.js
+**/*.ts
+!**/*.d.ts
+**/*.js.map
+*.ts
+!*.d.ts
+*.js.map
