@@ -1,0 +1,19 @@
+<div class="outerShell app-fancydd-outerShell" [ngClass]="cssClass != null ? cssClass : ''">
+    <div class="selectedArea app-fancydd-selectedArea" [ngClass] = "{ 'selectedArea-dropped': !hideDrop }" (click)="toggleDrop($event)">
+        <ng-container *ngTemplateOutlet="selectedTemplate;context:{ data: selectedItem }"></ng-container>
+    </div>
+    <div class="dropArea app-fancydd-dropArea" [ngStyle]="{ opacity: (hideDrop ? 0 : 1 ) }" [hidden]="hideDrop">
+        <div class="actionArea app-fancydd-actionArea">
+            <ng-container *ngTemplateOutlet="actionTemplate"></ng-container>
+        </div>
+        <div class="listArea app-fancydd-listarea">
+            <ul>
+                <li *ngFor="let item of items" (click)="itemClick(item)">
+                    <ng-container *ngTemplateOutlet="listTemplate;context:{ data: item }"></ng-container>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+

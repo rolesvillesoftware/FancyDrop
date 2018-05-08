@@ -1,0 +1,47 @@
+div.outerShell {
+    display: inline-block;
+}
+div.outerShell>div {
+}
+div.selectedArea {
+    padding: 13px;
+    border: dotted 1px lightgray;
+}
+div.selectedArea:hover,
+div.selectedArea-dropped {
+    padding: 13px;
+    border: dotted 1px darkgray;
+    cursor: pointer;
+    background: #ccc;
+}
+div.dropArea {
+    position: absolute;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    max-height: 25%;
+    overflow: hidden;
+    background: white;
+    transition: opacity 1s;
+}
+div.actionArea {
+}
+
+div.listArea {
+    max-height: 250px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+div.listArea ul,
+div.listArea li
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+div.listArea li {
+    padding: 3px;
+    cursor: pointer;
+}
+
