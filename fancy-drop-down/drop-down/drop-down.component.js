@@ -54,7 +54,9 @@ var DropDownComponent = /** @class */ (function () {
             this.hideDrop = false;
         }
         else {
-            rxjs_1.timer(1)
+            rxjs_1.Observable
+                .of(null)
+                .delay(1)
                 .subscribe(function (d) {
             }, function (e) {
             }, function () {
@@ -108,23 +110,23 @@ var DropDownComponent = /** @class */ (function () {
     ], DropDownComponent.prototype, "cssClass", void 0);
     __decorate([
         core_1.Output(),
-        __metadata("design:type", typeof (_a = typeof core_1.EventEmitter !== "undefined" && core_1.EventEmitter) === "function" && _a || Object)
+        __metadata("design:type", core_1.EventEmitter)
     ], DropDownComponent.prototype, "listToggle", void 0);
     __decorate([
         core_1.Output(),
-        __metadata("design:type", typeof (_b = typeof core_1.EventEmitter !== "undefined" && core_1.EventEmitter) === "function" && _b || Object)
+        __metadata("design:type", core_1.EventEmitter)
     ], DropDownComponent.prototype, "itemSelected", void 0);
     __decorate([
         core_1.ContentChild('selectedTemplate'),
-        __metadata("design:type", typeof (_c = typeof core_1.TemplateRef !== "undefined" && core_1.TemplateRef) === "function" && _c || Object)
+        __metadata("design:type", core_1.TemplateRef)
     ], DropDownComponent.prototype, "selectedTemplate", void 0);
     __decorate([
         core_1.ContentChild('actionTemplate'),
-        __metadata("design:type", typeof (_d = typeof core_1.TemplateRef !== "undefined" && core_1.TemplateRef) === "function" && _d || Object)
+        __metadata("design:type", core_1.TemplateRef)
     ], DropDownComponent.prototype, "actionTemplate", void 0);
     __decorate([
         core_1.ContentChild('listTemplate'),
-        __metadata("design:type", typeof (_e = typeof core_1.TemplateRef !== "undefined" && core_1.TemplateRef) === "function" && _e || Object)
+        __metadata("design:type", core_1.TemplateRef)
     ], DropDownComponent.prototype, "listTemplate", void 0);
     DropDownComponent = __decorate([
         core_1.Component({
@@ -135,7 +137,6 @@ var DropDownComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], DropDownComponent);
     return DropDownComponent;
-    var _a, _b, _c, _d, _e;
 }());
 exports.DropDownComponent = DropDownComponent;
 //# sourceMappingURL=drop-down.component.js.map

@@ -1,5 +1,5 @@
 import {Component, ContentChild, ElementRef, EventEmitter, Input, OnInit, Output, TemplateRef} from '@angular/core';
-import {timer} from 'rxjs';
+import {Observable} from 'rxjs';
 
 export interface IItemSelected {
     item: any;
@@ -61,7 +61,9 @@ export class DropDownComponent implements OnInit {
         if (this.hideDrop) {
             this.hideDrop = false;
         } else {
-            timer(1)
+            Observable
+                .of(null)
+                .delay(1)
                 .subscribe(
                     d => {
                     },
