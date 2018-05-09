@@ -8,4 +8,9 @@ gruntfile.js
 *.ts
 !*.d.ts
 *.js.map
-ngTest
+.git
+.idea
+tslint.json
+
+
+
