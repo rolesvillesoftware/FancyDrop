@@ -6,10 +6,11 @@
   "license": "MIT",
   "repository": "https://github.com/rolesvillesoftware/FancyDrop.git",
   "dependencies": {
-    "@angular/common": "^4.4.7",
-    "@angular/core": "^4.4.7",
-    "zone.js": "~0.8.26",
-    "rxjs": "^5.5.10"
+    "@angular/common": ">=4.4.7",
+    "@angular/core": ">=4.4.7",
+    "rxjs": ">=5.5.10",
+    "rxjs-compat": ">=6.1.0",
+    "zone.js": ">=0.8.26"
   },
   "devDependencies": {
     "typescript": "~2.7.2",
